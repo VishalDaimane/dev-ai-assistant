@@ -58,6 +58,8 @@ Multi-Agent pipeline:
 
 ## 📂 Project Structure
 
+
+
 dev-ai-assistant/
 │
 ├── backend/
@@ -74,6 +76,8 @@ dev-ai-assistant/
 └── vite.config.js
 
 
+
+
 ---
 
 ## ⚙️ Setup Instructions
@@ -84,19 +88,24 @@ dev-ai-assistant/
 git clone https://github.com/yourusername/dev-ai-assistant.git
 cd dev-ai-assistant
 
+
 🔧 Backend Setup (FastAPI + Gemini)
 2️⃣ Create virtual environment
+
+
 cd backend
 python -m venv .venv
 .\.venv\Scripts\activate   # Windows
 
+
 3️⃣ Install dependencies
+
 pip install fastapi uvicorn python-dotenv google-generativeai
+
 
 4️⃣ Add your Gemini API Key
 
 Create .env file:
-
 GEMINI_API_KEY=your_api_key_here
 
 
@@ -115,26 +124,23 @@ Swagger Docs:
 
 🎨 Frontend Setup (React + Tailwind)
 6️⃣ Install dependencies
+
 cd ../frontend
 npm install
 
+
 7️⃣ Start frontend
 npm run dev
-
-
 Frontend runs at:
 👉 http://localhost:5173
 
 🧠 Multi-Agent Debugging (Advanced)
-
 Endpoint:
 
 POST /multi_analyze
 {
   "message": "your code here"
 }
-
-
 Returns:
 
 {
@@ -142,17 +148,6 @@ Returns:
   "fixer": "Corrected code...",
   "explainer": "Complexity + reasoning..."
 }
-
-
-This powers the right-side Agent Results panel in UI.
-
-🖼 Screenshots (Add your screenshots)
-🧩 Chat UI
-
-🤖 Agent Results Panel
-
-(Create a screenshots/ folder and upload images)
-
 🛠️ Future Enhancements (Optional)
 
 🗂 File upload for full code analysis
@@ -184,5 +179,4 @@ Feel free to fork, improve, and showcase it!
 👨‍💻 Author
 
 Vishal Prakash Daimane
-
 Developer • AI Enthusiast • Full Stack Engineer
