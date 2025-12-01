@@ -1,0 +1,76 @@
+/* CRT Scanline Overlay */
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.2)
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 50;
+  animation: scrollScanlines 10s linear infinite;
+}
+
+/* Glow Effects */
+.neon-border {
+  border: 1px solid var(--neon-green);
+  box-shadow: 0 0 5px var(--neon-green), inset 0 0 5px var(--neon-green);
+}
+
+.neon-text {
+  text-shadow: 0 0 5px var(--neon-green);
+}
+
+/* Hacker Input Field */
+.hacker-input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #333;
+  color: var(--neon-green);
+  font-family: 'Fira Code', monospace;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.hacker-input:focus {
+  border-bottom: 2px solid var(--neon-green);
+  box-shadow: 0 5px 10px -5px var(--neon-green);
+}
+
+/* Cyber Button Styles */
+.cyber-btn {
+  position: relative;
+  background: transparent;
+  color: var(--neon-green);
+  border: 1px solid var(--neon-green);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 0 5px transparent;
+}
+
+.cyber-btn:hover {
+  background: var(--neon-green);
+  color: black;
+  box-shadow: 0 0 20px var(--neon-green);
+  font-weight: bold;
+}
+
+.cyber-btn-secondary {
+  border-color: var(--neon-blue);
+  color: var(--neon-blue);
+}
+
+.cyber-btn-secondary:hover {
+  background: var(--neon-blue);
+  color: black;
+  box-shadow: 0 0 20px var(--neon-blue);
+}

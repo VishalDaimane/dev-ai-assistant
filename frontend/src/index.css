@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-green: #0f0;
+  --neon-blue: #00f3ff;
+  --dark-bg: #050505;
+  --terminal-bg: #0a0a0a;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-bg);
+  color: var(--neon-green);
+  font-family: 'Fira Code', 'Courier New', monospace;
+  overflow: hidden; /* Hide scrollbars for full immersion */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #003300;
+  border: 1px solid var(--neon-green);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}
